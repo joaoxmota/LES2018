@@ -5,18 +5,16 @@ O atendimento tem três fazes:
 	**Conclusão, é quando são geradas contas a pagar, calculos de serviços, produtos utilizados, possíveis descontos, etc...
 	
 #agendar (Método)
-	**A cliente acessa o sistema e tenta o encaixe (método seguinte) para um atendimento.
-	**O salão informa a profissional que ela tem atendimento agendado.
-	**O profissional pode recusar o atendimento, informando o motivo (dia de folga, saúde, compromisso pessoal..) e é proposto para o
-	cliente alterar data, horário, profissional para atendê-lo ou cancelar o agendamento ou o profissional confirma o agendamento e o
-	cliente recebe a confirmação (por mensagem ou no status do seu agendamento). (status AGENDADO)
+	**O(a) cliente acessa o sistema e tenta o encaixe (método seguinte) para um atendimento.
+	**O salão informa o(a) profissional que tem atendimento agendado.
+	**O(a) profissional pode recusar o atendimento, informando o motivo (dia de folga, saúde, compromisso pessoal..) e é proposto para 	   o cliente alterar data, horário, profissional para atendê-lo ou cancelar o agendamento ou o profissional confirma o agendamento e 	     o cliente recebe a confirmação (por mensagem ou no status do seu agendamento). (status AGENDADO)
 
-	(Regra de negócio) caso o cliente não chegue para o atendimento até um período de tempo estabelecido pelo salão o atendimento é 
-	(status) CANCELADO
+	(Regra de negócio) caso o cliente não chegue para o atendimento até um período de tempo estabelecido pelo salão (tempo médio mais 	  alguns minutos de tolerância) o atendimento é (status) CANCELADO (Obs. Automaticamente ou manualmente?)
 	**O cliente pode adiar um atendimento para uma nova data ou horário desde que seja possível encaixá-la (método) em algum horário.
 
 #encaixar (Método)
-	**O cliente agenda um atendimento indicando horario, data e profissional desejada.
+	**O cliente agenda um atendimento, selecionando um indicando horario, data e profissional desejada.
+	*** Susbstituiria por : O(a) cliente agenda um atendimento, selecionando o(a) profissional desejado(a), selecioanando data e hora de acordo com a disponibilidade do(a) profissional.
 	**O cliente também pode não escolher um profissional, sendo atendido pelo profissional disponível no dia agendado.
 	
 #atender (Método)
@@ -27,7 +25,7 @@ O atendimento tem três fazes:
 	**Quando um atendimento é iniciado, nem o cliente nem o profissional podem cancelá-lo, somente o lider do salão ou dono.
 	
 #concluir (Método)
-	**O profissinal indica o término do atendimento, caso tenha utilizado algum produto a mais que o estipulado nos atendimentos
+	**O(a) profissinal indica o término do atendimento, caso tenha utilizado algum produto a mais que o estipulado nos atendimentos
 	comuns o profissional indica este(s) produto(s) que serão somados ao valor total do atendimento.
 	
 
