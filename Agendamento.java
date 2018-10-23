@@ -14,7 +14,7 @@
 }*/
 //package ipro.les2018.Model;
 
-public class Agendamento extends Usuario {
+public class Agendamento {
     
     private int id;
     //private Endereco endereco;
